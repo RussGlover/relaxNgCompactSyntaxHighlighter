@@ -1,0 +1,25 @@
+{
+    "name": "rnc",
+    "displayName": "Relax NG Compact Syntax",
+    "description": "Syntax highlighting for Relax NG Compact",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.32.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "rnc",
+            "aliases": ["RelaxNG Compact", "rnc"],
+            "extensions": [".rnc"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "rnc",
+            "scopeName": "source.rnc",
+            "path": "./syntaxes/rnc.tmLanguage"
+        }]
+    }
+}
